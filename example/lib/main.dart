@@ -108,6 +108,7 @@ class _MyAppState extends State<MyApp> {
         // AuthProvider.facebook(),
         // AuthProvider.twitter(),
         // AuthProvider.phone(),
+        AuthProvider.apple(),
       ]).then((firebaseUser) {
         setState(() {
           _error = "";

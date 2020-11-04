@@ -1,4 +1,4 @@
-#
+
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
@@ -16,6 +16,7 @@ A flutter plugin for Firebase Auth UI
   s.public_header_files = 'Classes/**/*.h'
   s.static_framework = true
   s.dependency 'Flutter'
+  s.dependency 'FirebaseUI', "~> 9"
   s.dependency 'FirebaseUI/Auth'
   s.dependency 'Firebase'
   s.dependency 'Firebase/Core'
@@ -26,7 +27,7 @@ A flutter plugin for Firebase Auth UI
   s.dependency 'FirebaseUI/Phone'
   s.dependency 'FBSDKCoreKit'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.resource_bundle = {
     'firebase_auth_ui' => ['Classes/**/*.{xib,png,lproj}']
   }
